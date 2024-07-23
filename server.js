@@ -7,7 +7,7 @@ const dotenv = require('dotenv');
 dotenv.config()
 require('./dbConnection'); // connect to mongo db
 app.use(cors({
-    origin: ["http://localhost:3000", "https://recipe-finder.onrender.com"]
+    origin: ["http://localhost:3000", "https://recipe-finder-client-wheat.vercel.app/"]
 })); // Cross-Origin Resource Sharing
 app.use(express.urlencoded({extended: true})); // using express
 app.use(express.json()); // converting to json
